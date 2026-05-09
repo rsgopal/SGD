@@ -29,10 +29,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/rsgopal/SGD/main/uninstall.s
 Copy a skill's `SKILL.md` from this repo into your project's `.claude/skills/` folder:
 
 ```bash
-# example: installing triage into your project
-mkdir -p your-project/.claude/skills/triage
-curl -fsSL https://raw.githubusercontent.com/rsgopal/SGD/main/skills/triage/SKILL.md \
-  -o your-project/.claude/skills/triage/SKILL.md
+# example: installing sgd:triage into your project
+mkdir -p your-project/.claude/skills/sgd:triage
+curl -fsSL https://raw.githubusercontent.com/rsgopal/SGD/main/skills/sgd:triage/SKILL.md \
+  -o your-project/.claude/skills/sgd:triage/SKILL.md
 ```
 
 The skill will be available only within that project.
@@ -47,7 +47,7 @@ Each skill includes a `prompt.md` — the same instructions without any Claude-s
 
 | Skill | What it does |
 |---|---|
-| [`triage`](skills/triage/) | Classify a problem using the Cynefin framework before committing to an approach |
+| [`sgd:triage`](skills/sgd:triage/) | Classify a problem using the Cynefin framework before committing to an approach |
 
 ---
 

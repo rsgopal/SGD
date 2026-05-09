@@ -1,5 +1,5 @@
 ---
-name: triage
+name: sgd:triage
 description: Classify a problem using the Cynefin framework and recommend next steps based on its domain
 ---
 
@@ -81,7 +81,7 @@ Based on the classified domain, output a concrete next-steps section. Steps must
 
 **If Confused / Disorder:**
 - Decompose the problem into sub-problems small enough to classify independently
-- Run `/triage` on each sub-problem separately
+- Run `/sgd:triage` on each sub-problem separately
 - Identify which sub-problem to tackle first (usually: resolve the biggest unknown, or address the highest-risk piece)
 - **Watch out for:** applying your default process (whatever the team is most comfortable with) to the whole problem. Disorder is the domain where that instinct is most dangerous.
 
@@ -96,7 +96,7 @@ Close with a one-sentence suggestion on how to proceed:
 - If **Clear or Complicated**: move directly into structured analysis — the problem is well-understood enough to scope and execute.
 - If **Complex**: answer the probe questions first before any planning
 - If **Chaotic**: stabilize the immediate issue before any planning or analysis
-- If **Confused**: run `/triage` again on each decomposed sub-problem separately
+- If **Confused**: run `/sgd:triage` again on each decomposed sub-problem separately
 
 ---
 
