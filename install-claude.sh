@@ -17,7 +17,7 @@ if ! command -v claude &>/dev/null; then
 fi
 
 # ── 2. Uninstall any existing version cleanly ────────────────────────────────
-bash <(curl -fsSL "$RAW_URL/uninstall.sh")
+bash <(curl -fsSL "$RAW_URL/uninstall-claude.sh")
 echo ""
 
 # ── 3. Register SGD marketplace ──────────────────────────────────────────────
