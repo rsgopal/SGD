@@ -1,0 +1,13 @@
+{
+  "name": "sgd",
+  "plugins": [
+    {
+      "name": "sgd",
+      "source": "./",
+      "description": "Spec-Guided Development skills for teams who want to think before they build"
+    }
+  ],
+  "owner": {
+    "name": "rsgopal"
+  }
+}

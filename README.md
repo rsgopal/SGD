@@ -10,27 +10,32 @@ Each skill is a standalone tool. Use one, use several, or use them as inspiratio
 
 ## Using the skills
 
-### Claude Code (plugin)
+### Claude Code (install script)
 
-Point Claude Code at this repo to install all skills at once:
+Run the installer — it registers the plugin and sets everything up in one step:
 
 ```bash
-claude plugin add https://github.com/your-org/sgd
+bash <(curl -fsSL https://raw.githubusercontent.com/rsgopal/SGD/main/install.sh)
 ```
 
-Then invoke any skill with `/skill-name` in Claude Code.
+Then invoke any skill with `/skill-name` in Claude Code. To uninstall:
 
-### Claude Code (manual)
-
-Copy a skill's `SKILL.md` into your project's `.claude/skills/` folder:
-
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/rsgopal/SGD/main/uninstall.sh)
 ```
-your-project/
-└── .claude/
-    └── skills/
-        └── triage/
-            └── SKILL.md
+
+### Claude Code (manual, project-scoped)
+
+Copy a skill's `SKILL.md` from this repo into your project's `.claude/skills/` folder:
+
+```bash
+# example: installing triage into your project
+mkdir -p your-project/.claude/skills/triage
+curl -fsSL https://raw.githubusercontent.com/rsgopal/SGD/main/skills/triage/SKILL.md \
+  -o your-project/.claude/skills/triage/SKILL.md
 ```
+
+The skill will be available only within that project.
 
 ### Copilot, Cursor, Codex, and other agents
 
