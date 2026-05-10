@@ -120,4 +120,8 @@ The Cynefin framework (pronounced "kuh-NEV-in", Welsh for "habitat" or "place of
 
 The critical insight is that **the right process depends on the domain**. Applying complicated-domain solutions to a complex problem will fail — you cannot analyze your way out of emergence. Applying complex-domain thinking to a clear problem is wasteful — just use the best practice.
 
+**Further reading:**
+- [A Leader's Framework for Decision Making](https://hbr.org/2007/11/a-leaders-framework-for-decision-making) — Dave Snowden & Mary Boone, Harvard Business Review (2007)
+- [Cynefin framework — Wikipedia](https://en.wikipedia.org/wiki/Cynefin_framework)
+
 ---

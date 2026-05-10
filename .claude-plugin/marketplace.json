@@ -1,5 +1,6 @@
 {
   "name": "sgd",
+  "description": "Spec-Guided Development — a growing collection of skills for teams who want to think before they build",
   "plugins": [
     {
       "name": "sgd",

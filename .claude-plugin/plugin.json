@@ -1,5 +1,9 @@
 {
   "name": "sgd",
   "version": "0.1.0",
-  "description": "Spec-Guided Development — skills for teams who want to think before they build"
+  "description": "Spec-Guided Development — skills for teams who want to think before they build",
+  "author": {
+    "name": "Saravana Gopalakrishnan",
+    "url": "https://github.com/rsgopal"
+  }
 }
