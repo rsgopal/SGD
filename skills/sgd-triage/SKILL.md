@@ -73,11 +73,11 @@ Based on the classified domain, output a concrete next-steps section. Steps must
 - **Watch out for:** mistaking this for Complicated and jumping straight into a plan. If the team's instinct is "let's get the seniors in a room and design it," that's the Complicated instinct — valid only if the answer is actually knowable upfront.
 
 **If Chaotic:**
-- Name the immediate stabilizing action — the one thing that stops further damage right now
-- Act first, analyze second — do not wait for consensus or a perfect plan
+- Hotfix first — identify the one change that stops further damage right now
+- Do not hand this to an agent yet; the problem is not well-defined enough
 - Once stable, explicitly re-classify: most problems leave Chaotic after the immediate crisis resolves
 - Treat any solutions found in chaos as temporary; flag them for revisit
-- **Watch out for:** staying in crisis mode after the system stabilizes. Chaotic responses (act without analysis) that persist into a stable state become technical debt at best, disasters at worst.
+- **Watch out for:** staying in crisis mode after the system stabilises. Chaotic responses that persist into a stable state become technical debt at best, disasters at worst.
 
 **If Confused / Disorder:**
 - Decompose the problem into sub-problems small enough to classify independently
@@ -95,7 +95,7 @@ Close with a one-sentence suggestion on how to proceed:
 
 - If **Clear or Complicated**: move directly into structured analysis — the problem is well-understood enough to scope and execute.
 - If **Complex**: answer the probe questions first before any planning
-- If **Chaotic**: stabilize the immediate issue before any planning or analysis
+- If **Chaotic**: hotfix first, understand later — do not hand this to an agent yet
 - If **Confused**: run `/sgd:triage` again on each decomposed sub-problem separately
 
 ---
@@ -112,11 +112,11 @@ The Cynefin framework (pronounced "kuh-NEV-in", Welsh for "habitat" or "place of
 
 | Domain | Nature of the problem | Best approach |
 |---|---|---|
-| **Clear** (formerly Simple) | Cause and effect are obvious. Best practices exist and are known. | Sense → Categorize → Respond. Apply the known best practice. |
-| **Complicated** | Cause and effect require analysis or expertise to diagnose. Multiple valid solutions may exist. | Sense → Analyze → Respond. Bring in experts, do the analysis. |
-| **Complex** | Cause and effect only become apparent in retrospect. There are no right answers, only emergent ones. | Probe → Sense → Respond. Run safe-to-fail experiments. |
-| **Chaotic** | No cause-and-effect relationship is perceivable. Crisis mode. | Act → Sense → Respond. Stop the bleeding first, then analyze. |
-| **Confused / Disorder** | It is unclear which domain applies. This is the danger zone — people default to their comfort zone rather than the right approach. | Break the problem apart. Classify each piece separately. |
+| **Clear** (formerly Simple) | The answer is known, just code it. Analysing this is waste. | Sense → Categorize → Code. Apply the known best practice. |
+| **Complicated** | The answer is findable but needs expertise. Analyse first, then code with AI assistance. | Sense → Analyze → Code. Bring in experts, do the analysis. |
+| **Complex** | The answer will only emerge as you go. Probe with small experiments first, code second. | Probe → Sense → Code. Run safe-to-fail experiments. |
+| **Chaotic** | Something is actively broken right now. Hotfix first, understand later — don't hand this to an agent yet. | Act → Sense → Code. Stop the crisis before it deepens. |
+| **Confused / Disorder** | You can't even tell which of the above applies. Break the problem down until you can. | Break the problem apart. Classify each piece separately. |
 
 The critical insight is that **the right process depends on the domain**. Applying complicated-domain solutions to a complex problem will fail — you cannot analyze your way out of emergence. Applying complex-domain thinking to a clear problem is wasteful — just use the best practice.
 
